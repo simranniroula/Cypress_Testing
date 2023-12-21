@@ -3,7 +3,7 @@ const { expect} = require("chai")
 
 describe("Assertions demo", () => {
 
-    it("Implicit Assertions", ()=> {
+    it("Implicit Assertionss", ()=> {
 
         cy.visit('https://opensource-demo.orangehrmlive.com/web/index.php/auth/login')
 // should
