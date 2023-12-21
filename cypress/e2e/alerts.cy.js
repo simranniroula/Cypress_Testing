@@ -57,15 +57,16 @@ describe("Alerts", () => {
 
         //Approach 1
    /*     cy.visit("https://the-internet.herokuapp.com/basic_auth",{ auth:
-                                                                     {
+                                                                    {
                                                                       username: "admin", 
                                                                       password: "admin"
                                                                     }
-                                                                })
+                                                                     })
         cy.get("div[class='example'] p").should('have.contain', 'Congratulations')
 */
+        //Approach 2
         cy.visit("https://admin:admin@the-internet.herokuapp.com/basic_auth")
-        cy.get("div[class='example'] p").should('have.contain', 'Congratulations')
+        cy.get("div[class='example'] p").should('have.contain', 'Congratulationss')
 
     })
 
